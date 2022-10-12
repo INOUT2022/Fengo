@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="product_info_add" inherit_id="website_sale.product" name="product info add">
+    
+<xpath expr="//a[@id='add_to_cart']" position="after">
+        
+<hr/>
+             
+<br/>
+        
+<p>Beneficios del producto:
+            
+<span t-field="product.x_studio_beneficios_del_producto"/>
+        
+</p>
+        
+<p>Ingredientes:
+            
+<span t-field="product.x_studio_ingredientes"/>
+        
+</p>
+
+<p>Uso/Aplicación:
+            
+<span t-field="product.x_studio_usoaplicacin"/>
+        
+</p>
+    
+</xpath>
+</template>
+</odoo>
